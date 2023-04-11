@@ -1,0 +1,377 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [L:\cse380\lab7\lab7.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image L:\cse380\lab7\lab7.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 728]: Last Updated: Fri May 02 16:26:03 2014
+<BR><P>
+<H3>Maximum Stack Usage =          8 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[15df5a4]">Reset_Handler</a>
+ <LI><a href="#[15df5e0]">__user_initial_stackheap</a>
+ <LI><a href="#[15dec44]">lab7</a>
+ <LI><a href="#[15df568]">FIQ_Handler</a>
+ <LI><a href="#[15df388]">READ_PUSH_BTNS</a>
+ <LI><a href="#[15df34c]">LEDS</a>
+ <LI><a href="#[15df310]">RGB_LED</a>
+ <LI><a href="#[15df2d4]">DISPLAY_DIGIT</a>
+ <LI><a href="#[15df298]">UART_INIT</a>
+ <LI><a href="#[15df25c]">READ_CHARACTER</a>
+ <LI><a href="#[15df220]">OUTPUT_CHARACTER</a>
+ <LI><a href="#[15df1e4]">OUTPUT_STRING</a>
+ <LI><a href="#[15df1a8]">READ_STRING</a>
+ <LI><a href="#[15df16c]">unsigned_div_and_mod</a>
+ <LI><a href="#[15df130]">pin_connect_block_setup_for_uart0</a>
+ <LI><a href="#[15df7c0]">Undef_Handler</a>
+ <LI><a href="#[15df784]">SWI_Handler</a>
+ <LI><a href="#[15df748]">PAbt_Handler</a>
+ <LI><a href="#[15df70c]">DAbt_Handler</a>
+ <LI><a href="#[15df6d0]">IRQ_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[15df7c0]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[15df7c0]">Undef_Handler</a><BR>
+ <LI><a href="#[15df784]">SWI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[15df784]">SWI_Handler</a><BR>
+ <LI><a href="#[15df748]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[15df748]">PAbt_Handler</a><BR>
+ <LI><a href="#[15df70c]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[15df70c]">DAbt_Handler</a><BR>
+ <LI><a href="#[15df6d0]">IRQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[15df6d0]">IRQ_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[15df5a4]">Reset_Handler</a>
+ <LI><a href="#[15df7c0]">Undef_Handler</a>
+ <LI><a href="#[15df784]">SWI_Handler</a>
+ <LI><a href="#[15df748]">PAbt_Handler</a>
+ <LI><a href="#[15df70c]">DAbt_Handler</a>
+ <LI><a href="#[15df6d0]">IRQ_Handler</a>
+ <LI><a href="#[15df568]">FIQ_Handler</a>
+ <LI><a href="#[15de53c]">__main</a>
+ <LI><a href="#[15de938]">main</a>
+ <LI><a href="#[15da3d8]">__I$use$semihosting</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[15df5a4]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[15de53c]"></a>__main</STRONG> (ARM, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[15d7a5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[15de410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[15d7a5c]"></a>__scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[15de53c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[15d7a20]"></a>__scatterload_rt2</STRONG> (ARM, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[15de410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[15d79e4]"></a>__scatterload_null</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[15d7b88]"></a>__decompress</STRONG> (ARM, 96 bytes, Stack size unknown bytes, __dclz77c.o(!!dclz77c), UNUSED)
+
+<P><STRONG><a name="[15d7b4c]"></a>__decompress2</STRONG> (ARM, 0 bytes, Stack size unknown bytes, __dclz77c.o(!!dclz77c), UNUSED)
+
+<P><STRONG><a name="[15d7840]"></a>__scatterload_zeroinit</STRONG> (ARM, 44 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[15dd600]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init &rArr; _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15db440]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15ddf60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15dbad0]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+
+<P><STRONG><a name="[15dbb48]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
+
+<P><STRONG><a name="[15dbf08]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[15dbda0]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[15db9e0]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[15dba58]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[15dbe18]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[15dbd28]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[15dc304]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
+
+<P><STRONG><a name="[15dc160]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+
+<P><STRONG><a name="[15dc0e8]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[15dc070]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[15dbff8]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[15dbf80]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[15dc214]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[15db9a4]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
+
+<P><STRONG><a name="[15dbe90]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[15dbcb0]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[15dc28c]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[15da720]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[15db1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15d9ab4]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[15d98d4]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[15d9898]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[15d9a00]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[15d9b68]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[15d9988]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[15de410]"></a>__rt_entry</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[15d7a20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<LI><a href="#[15de53c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[15de014]"></a>__rt_entry_presh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[15ddc90]"></a>__rt_entry_sh</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15ddb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[15ddf60]"></a>__rt_entry_li</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_li &rArr; __rt_lib_init &rArr; _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15dd600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15ddf9c]"></a>__rt_entry_postsh_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[15ddeac]"></a>__rt_entry_main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Calls]<UL><LI><a href="#[15dd9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via BX)
+</UL>
+
+<P><STRONG><a name="[15ddee8]"></a>__rt_entry_postli_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[15dce80]"></a>__rt_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[15dd9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15db1e8]"></a>__rt_exit_ls</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[15da720]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15db224]"></a>__rt_exit_prels_1</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[15db1ac]"></a>__rt_exit_exit</STRONG> (ARM, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[15dac0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[15df5e0]"></a>__user_initial_stackheap</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[15ddb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[15de938]"></a>main</STRONG> (ARM, 28 bytes, Stack size 8 bytes, lab7wrapper.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = main
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15dec44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lab7 (via Veneer)
+<LI><a href="#[15df130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pin_connect_block_setup_for_uart0 (via Veneer)
+<LI><a href="#[15df298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_INIT (via Veneer)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+</UL>
+<P><STRONG><a name="[15de6a4]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[15de668]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[15de62c]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[15ddb64]"></a>__user_setup_stackheap</STRONG> (ARM, 96 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15dcf70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[15df5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15ddc90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[15dd9fc]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[15dce80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit (via Veneer)
+<LI><a href="#[15dd984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_call_atexit_fns (Weak Reference)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15ddeac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[15dcfac]"></a>__user_libspace</STRONG> (ARM, 12 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[15dcf70]"></a>__user_perproc_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[15ddb64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[15dcf34]"></a>__user_perthread_libspace</STRONG> (ARM, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[15daea0]"></a>__rt_fp_status_addr</STRONG> (ARM, 16 bytes, Stack size 0 bytes, rt_fp_status_addr_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[15db440]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init
+</UL>
+
+<P><STRONG><a name="[15dac0c]"></a>_sys_exit</STRONG> (ARM, 20 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[15db1ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[15da3d8]"></a>__I$use$semihosting</STRONG> (ARM, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> sys_exit.o(.text)
+</UL>
+<P><STRONG><a name="[15da39c]"></a>__use_no_semihosting_swi</STRONG> (ARM, 4 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[15db440]"></a>_fp_init</STRONG> (ARM, 24 bytes, Stack size 8 bytes, fpinit.o(x$fpl$fpinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[15daea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_fp_status_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15dd600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15db404]"></a>__fplib_config_pureend_doubles</STRONG> (ARM, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+
+<P><STRONG><a name="[15dec44]"></a>lab7</STRONG> (ARM, 0 bytes, Stack size unknown bytes, lab7.o(interrupts))
+<BR><BR>[Calls]<UL><LI><a href="#[15df16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;unsigned_div_and_mod
+<LI><a href="#[15df1e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTPUT_STRING
+<LI><a href="#[15df2d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DISPLAY_DIGIT
+<LI><a href="#[15df310]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGB_LED
+<LI><a href="#[15df34c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDS
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15de938]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15df568]"></a>FIQ_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, lab7.o(interrupts))
+<BR><BR>[Calls]<UL><LI><a href="#[15df1e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTPUT_STRING
+<LI><a href="#[15df25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;READ_CHARACTER
+<LI><a href="#[15df2d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DISPLAY_DIGIT
+<LI><a href="#[15df310]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RGB_LED
+<LI><a href="#[15df34c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDS
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[15df388]"></a>READ_PUSH_BTNS</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib), UNUSED)
+
+<P><STRONG><a name="[15df34c]"></a>LEDS</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15dec44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lab7
+<LI><a href="#[15df568]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[15df310]"></a>RGB_LED</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15dec44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lab7
+<LI><a href="#[15df568]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[15df2d4]"></a>DISPLAY_DIGIT</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15dec44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lab7
+<LI><a href="#[15df568]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[15df298]"></a>UART_INIT</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15de938]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[15df25c]"></a>READ_CHARACTER</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15df1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;READ_STRING
+<LI><a href="#[15df568]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[15df220]"></a>OUTPUT_CHARACTER</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15df1a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;READ_STRING
+<LI><a href="#[15df1e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTPUT_STRING
+</UL>
+
+<P><STRONG><a name="[15df1e4]"></a>OUTPUT_STRING</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Calls]<UL><LI><a href="#[15df220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTPUT_CHARACTER
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15dec44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lab7
+<LI><a href="#[15df568]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+
+<P><STRONG><a name="[15df1a8]"></a>READ_STRING</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[15df220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTPUT_CHARACTER
+<LI><a href="#[15df25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;READ_CHARACTER
+</UL>
+
+<P><STRONG><a name="[15df16c]"></a>unsigned_div_and_mod</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15dec44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lab7
+</UL>
+
+<P><STRONG><a name="[15df130]"></a>pin_connect_block_setup_for_uart0</STRONG> (ARM, 0 bytes, Stack size unknown bytes, library.o(lib))
+<BR><BR>[Called By]<UL><LI><a href="#[15de938]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[15df7c0]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[15df7c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15df7c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[15df784]"></a>SWI_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[15df784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15df784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[15df748]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[15df748]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15df748]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[15df70c]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[15df70c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15df70c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[15df6d0]"></a>IRQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[15df6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15df6d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[15dd984]"></a>_call_atexit_fns</STRONG> (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[15dd9fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+<HR></body></html>
