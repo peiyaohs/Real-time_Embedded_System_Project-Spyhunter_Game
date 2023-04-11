@@ -1,6 +1,6 @@
 Final lab project
 
-LPC2138_Education_Board
+LPC2138_Education_Board with 7-segment display and LCD display
 
 https://www.tme.eu/Document/578c8dd73b62955fd131a2f6f70e60ab/LPC2138_Education_Board_Users_Guide.pdf
 
